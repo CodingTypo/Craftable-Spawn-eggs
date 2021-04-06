@@ -1,0 +1,134 @@
+spawn_eggs:
+
+  bat: true
+
+  cat: true
+
+  chicken: true
+
+  cod: true
+
+  cow: true
+
+  donkey: true
+
+  fox: true
+
+  horse: true
+
+  mooshroom: true
+
+  mule: true
+
+  ocelot: true
+
+  panda: true
+
+  parrot: true
+
+  pig: true
+
+  rabbit: true
+
+  salmon: true
+
+  sheep: true
+
+  skeleton_horse: true
+
+  snow_man: true
+
+  squid: true
+
+  strider: true
+
+  tropical_fish: true
+
+  turtle: true
+
+  villager: true
+
+  blaze: true
+
+  creeper: true
+
+  drowned: true
+
+  elder_guardian: true
+
+  ender_dragon: true
+
+  endermite: true
+
+  evoker: true
+
+  ghast: true
+
+  guardian: true
+
+  hoglin: true
+
+  husk: true
+
+  illusioner: true
+
+  magma_cube: true
+
+  phantom: true
+
+  piglin: true
+
+  piglin_brute: true
+
+  pillager: true
+
+  ravager: true
+
+  shulker: true
+
+  silverfish: true
+
+  skeleton: true
+
+  slime: true
+
+  stray: true
+
+  vex: true
+
+  vindicator: true
+
+  witch: true
+
+  wither: true
+
+  wither_skeleton: true
+
+  zoglin: true
+
+  zombie: true
+
+  zombie_villager: true
+
+  bee: true
+
+  cave_spider: true
+
+  dolphin: true
+
+  enderman: true
+
+  llama: true
+
+  polar_bear: true
+
+  pufferfish: true
+
+  spider: true
+
+  wolf: true
+
+  zombified_piglin: true
+
+this:
+  saveDefaultConfig():

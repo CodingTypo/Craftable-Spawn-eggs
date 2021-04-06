@@ -1,0 +1,19 @@
+name: craftable_spawn_eggs
+version: 1.3
+author: rubin
+main: com.rubin.cse.CseMain
+api-version: 1.16
+commands:
+  csegive:
+    description: give yourself Craftable spawn eggs
+    usage: /<command>
+  csetoggle:
+    description: toggle spawn eggs
+    usage: /<command>
+permissions:
+  csegive2:
+    description: be able to use the GUI's
+    default: op
+  csetoggle:
+    description: be able to use /csetoggle command
+    default: op
