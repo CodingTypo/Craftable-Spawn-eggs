@@ -21,11 +21,11 @@ public class CodSpawnItem {
     private static void createCodspawn() {
         ItemStack item = new ItemStack(Material.COD_SPAWN_EGG, 1);
         ItemMeta meta = item.getItemMeta();
-        meta.setDisplayName("§3Spawn Cod");
+        meta.setDisplayName("§bCod");
         List<String> lore = new ArrayList<>();
-        lore.add("§1Craftable Cod spawn egg");
-        lore.add("§1this spawn egg summons:");
-        lore.add("§1Cod!");
+        lore.add("§7Craftable Cod spawn egg");
+        lore.add("§7this spawn egg summons:");
+        lore.add("§7Cod!");
         meta.setLore(lore);
         meta.addEnchant(Enchantment.LUCK, 1, false);
         meta.addItemFlags(ItemFlag.HIDE_ENCHANTS);

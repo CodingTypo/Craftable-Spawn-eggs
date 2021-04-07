@@ -23,11 +23,11 @@ public class ZombieSpawnItem {
     private static void createZombiespawn() {
         ItemStack item = new ItemStack(Material.ZOMBIE_SPAWN_EGG, 1);
         ItemMeta meta = item.getItemMeta();
-        meta.setDisplayName("§3spawn Zombie");
+        meta.setDisplayName("§2Zombie");
         List<String> lore = new ArrayList<>();
-        lore.add("§1Craftable zombie egg");
-        lore.add("§1this spawn egg summons:");
-        lore.add("§1Zombie!");
+        lore.add("§7Craftable zombie egg");
+        lore.add("§7this spawn egg summons:");
+        lore.add("§7Zombie!");
         meta.setLore(lore);
         meta.addEnchant(Enchantment.LUCK, 1, false);
         meta.addItemFlags(ItemFlag.HIDE_ENCHANTS);

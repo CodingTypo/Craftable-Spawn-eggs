@@ -21,11 +21,11 @@ public class WolfSpawnItem {
     private static void createWolfspawn() {
         ItemStack item = new ItemStack(Material.WOLF_SPAWN_EGG, 1);
         ItemMeta meta = item.getItemMeta();
-        meta.setDisplayName("§3Spawn Wolf");
+        meta.setDisplayName("§fWolf");
         List<String> lore = new ArrayList<>();
-        lore.add("§1Craftable Wolf spawn egg");
-        lore.add("§1this spawn egg summons:");
-        lore.add("§1Wolf!");
+        lore.add("§7Craftable Wolf spawn egg");
+        lore.add("§7this spawn egg summons:");
+        lore.add("§7Wolf!");
         meta.setLore(lore);
         meta.addEnchant(Enchantment.LUCK, 1, false);
         meta.addItemFlags(ItemFlag.HIDE_ENCHANTS);

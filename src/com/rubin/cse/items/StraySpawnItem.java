@@ -21,11 +21,11 @@ public class StraySpawnItem {
     private static void createStrayspawn() {
         ItemStack item = new ItemStack(Material.STRAY_SPAWN_EGG, 1);
         ItemMeta meta = item.getItemMeta();
-        meta.setDisplayName("§3Spawn Stray");
+        meta.setDisplayName("§fStray");
         List<String> lore = new ArrayList<>();
-        lore.add("§1Craftable Stray spawn egg");
-        lore.add("§1this spawn egg summons:");
-        lore.add("§1Stray!");
+        lore.add("§7Craftable Stray spawn egg");
+        lore.add("§7this spawn egg summons:");
+        lore.add("§7Stray!");
         meta.setLore(lore);
         meta.addEnchant(Enchantment.LUCK, 1, false);
         meta.addItemFlags(ItemFlag.HIDE_ENCHANTS);

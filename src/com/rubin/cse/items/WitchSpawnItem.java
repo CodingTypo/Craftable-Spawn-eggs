@@ -21,11 +21,11 @@ public class WitchSpawnItem {
     private static void createWitchspawn() {
         ItemStack item = new ItemStack(Material.WITCH_SPAWN_EGG, 1);
         ItemMeta meta = item.getItemMeta();
-        meta.setDisplayName("§3Spawn Witch");
+        meta.setDisplayName("§5Witch");
         List<String> lore = new ArrayList<>();
-        lore.add("§1Craftable Witch spawn egg");
-        lore.add("§1this spawn egg summons:");
-        lore.add("§1Witch!");
+        lore.add("§7Craftable Witch spawn egg");
+        lore.add("§7this spawn egg summons:");
+        lore.add("§7Witch!");
         meta.setLore(lore);
         meta.addEnchant(Enchantment.LUCK, 1, false);
         meta.addItemFlags(ItemFlag.HIDE_ENCHANTS);

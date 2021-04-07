@@ -23,11 +23,11 @@ public class DonkeySpawnItem {
     private static void createDonkeyspawn() {
         ItemStack item = new ItemStack(Material.DONKEY_SPAWN_EGG, 1);
         ItemMeta meta = item.getItemMeta();
-        meta.setDisplayName("§3spawn Donkey");
+        meta.setDisplayName("§6Donkey");
         List<String> lore = new ArrayList<>();
-        lore.add("§1Craftable donkey egg");
-        lore.add("§1this spawn egg summons:");
-        lore.add("§1Donkey!");
+        lore.add("§7Craftable donkey egg");
+        lore.add("§7this spawn egg summons:");
+        lore.add("§7Donkey!");
         meta.setLore(lore);
         meta.addEnchant(Enchantment.LUCK, 1, false);
         meta.addItemFlags(ItemFlag.HIDE_ENCHANTS);

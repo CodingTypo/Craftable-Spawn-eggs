@@ -23,11 +23,11 @@ public class TurtleSpawnItem {
     private static void createTurtlespawn() {
         ItemStack item = new ItemStack(Material.TURTLE_SPAWN_EGG, 1);
         ItemMeta meta = item.getItemMeta();
-        meta.setDisplayName("§3spawn Turtle");
+        meta.setDisplayName("§2Turtle");
         List<String> lore = new ArrayList<>();
-        lore.add("§1Craftable turtle egg");
-        lore.add("§1this spawn egg summons:");
-        lore.add("§1Turtle!");
+        lore.add("§7Craftable turtle egg");
+        lore.add("§7this spawn egg summons:");
+        lore.add("§7Turtle!");
         meta.setLore(lore);
         meta.addEnchant(Enchantment.LUCK, 1, false);
         meta.addItemFlags(ItemFlag.HIDE_ENCHANTS);

@@ -23,11 +23,11 @@ public class SquidSpawnItem {
     private static void createSquidspawn() {
         ItemStack item = new ItemStack(Material.SQUID_SPAWN_EGG, 1);
         ItemMeta meta = item.getItemMeta();
-        meta.setDisplayName("§3spawn Squid");
+        meta.setDisplayName("§8Squid");
         List<String> lore = new ArrayList<>();
-        lore.add("§1Craftable squid egg");
-        lore.add("§1this spawn egg summons:");
-        lore.add("§1Squid!");
+        lore.add("§7Craftable squid egg");
+        lore.add("§7this spawn egg summons:");
+        lore.add("§7Squid!");
         meta.setLore(lore);
         meta.addEnchant(Enchantment.LUCK, 1, false);
         meta.addItemFlags(ItemFlag.HIDE_ENCHANTS);

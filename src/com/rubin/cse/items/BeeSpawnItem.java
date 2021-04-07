@@ -21,11 +21,11 @@ public class BeeSpawnItem {
     private static void createBeespawn() {
         ItemStack item = new ItemStack(Material.BEE_SPAWN_EGG, 1);
         ItemMeta meta = item.getItemMeta();
-        meta.setDisplayName("§3Spawn Bee");
+        meta.setDisplayName("§eBee");
         List<String> lore = new ArrayList<>();
-        lore.add("§1Craftable Bee spawn egg");
-        lore.add("§1this spawn egg summons:");
-        lore.add("§1Bee!");
+        lore.add("§7Craftable Bee spawn egg");
+        lore.add("§7this spawn egg summons:");
+        lore.add("§7Bee!");
         meta.setLore(lore);
         meta.addEnchant(Enchantment.LUCK, 1, false);
         meta.addItemFlags(ItemFlag.HIDE_ENCHANTS);

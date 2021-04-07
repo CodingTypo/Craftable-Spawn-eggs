@@ -19,9 +19,9 @@ public class NextPageItem {
     private static void createnextpage() {
         ItemStack item = new ItemStack ( Material.BLUE_STAINED_GLASS_PANE,1);
         ItemMeta meta = item.getItemMeta ();
-        meta.setDisplayName ( "§3Next page" );
+        meta.setDisplayName ( "§bNext page" );
         List<String> lore = new ArrayList<> ();
-        lore.add ( "§1Open the Next page" );
+        lore.add ( "§3Open the Next page" );
         meta.setLore ( lore );
         meta.addItemFlags ( ItemFlag.HIDE_ENCHANTS );
         meta.addItemFlags ( ItemFlag.HIDE_UNBREAKABLE );

@@ -21,11 +21,11 @@ public class SilverFishSpawnItem {
     private static void createSilverfishspawn() {
         ItemStack item = new ItemStack(Material.SILVERFISH_SPAWN_EGG, 1);
         ItemMeta meta = item.getItemMeta();
-        meta.setDisplayName("§3Spawn Silverfish");
+        meta.setDisplayName("§8Silverfish");
         List<String> lore = new ArrayList<>();
-        lore.add("§1Craftable Silverfish spawn egg");
-        lore.add("§1this spawn egg summons:");
-        lore.add("§1Silverfish!");
+        lore.add("§7Craftable Silverfish spawn egg");
+        lore.add("§7this spawn egg summons:");
+        lore.add("§7Silverfish!");
         meta.setLore(lore);
         meta.addEnchant(Enchantment.LUCK, 1, false);
         meta.addItemFlags(ItemFlag.HIDE_ENCHANTS);

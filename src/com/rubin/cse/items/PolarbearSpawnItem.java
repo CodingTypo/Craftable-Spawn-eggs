@@ -21,11 +21,11 @@ public class PolarbearSpawnItem {
     private static void createPolarbearspawn() {
         ItemStack item = new ItemStack(Material.POLAR_BEAR_SPAWN_EGG, 1);
         ItemMeta meta = item.getItemMeta();
-        meta.setDisplayName("§3Spawn Polarbear");
+        meta.setDisplayName("§fPolarbear");
         List<String> lore = new ArrayList<>();
-        lore.add("§1Craftable Polarbear spawn egg");
-        lore.add("§1this spawn egg summons:");
-        lore.add("§1Polarbear!");
+        lore.add("§7Craftable Polarbear spawn egg");
+        lore.add("§7this spawn egg summons:");
+        lore.add("§7Polarbear!");
         meta.setLore(lore);
         meta.addEnchant(Enchantment.LUCK, 1, false);
         meta.addItemFlags(ItemFlag.HIDE_ENCHANTS);

@@ -23,11 +23,11 @@ public class VindicatorSpawnItem {
     private static void createVindicatorspawn() {
         ItemStack item = new ItemStack(Material.VINDICATOR_SPAWN_EGG, 1);
         ItemMeta meta = item.getItemMeta();
-        meta.setDisplayName("§3spawn Vindicator");
+        meta.setDisplayName("§8Vindicator");
         List<String> lore = new ArrayList<>();
-        lore.add("§1Craftable vindicator egg");
-        lore.add("§1this spawn egg summons:");
-        lore.add("§1Vindicator!");
+        lore.add("§7Craftable vindicator egg");
+        lore.add("§7this spawn egg summons:");
+        lore.add("§7Vindicator!");
         meta.setLore(lore);
         meta.addEnchant(Enchantment.LUCK, 1, false);
         meta.addItemFlags(ItemFlag.HIDE_ENCHANTS);

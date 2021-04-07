@@ -21,11 +21,11 @@ public class HuskSpawnItem {
     private static void createHuskspawn() {
         ItemStack item = new ItemStack(Material.HUSK_SPAWN_EGG, 1);
         ItemMeta meta = item.getItemMeta();
-        meta.setDisplayName("§3Spawn Husk");
+        meta.setDisplayName("§6Husk");
         List<String> lore = new ArrayList<>();
-        lore.add("§1Craftable Husk spawn egg");
-        lore.add("§1this spawn egg summons:");
-        lore.add("§1Husk!");
+        lore.add("§7Craftable Husk spawn egg");
+        lore.add("§7this spawn egg summons:");
+        lore.add("§7Husk!");
         meta.setLore(lore);
         meta.addEnchant(Enchantment.LUCK, 1, false);
         meta.addItemFlags(ItemFlag.HIDE_ENCHANTS);

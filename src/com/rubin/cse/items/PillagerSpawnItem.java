@@ -23,11 +23,11 @@ public class PillagerSpawnItem {
     private static void createPillagerspawn() {
         ItemStack item = new ItemStack(Material.PILLAGER_SPAWN_EGG, 1);
         ItemMeta meta = item.getItemMeta();
-        meta.setDisplayName("§3spawn Pillager");
+        meta.setDisplayName("§8Pillager");
         List<String> lore = new ArrayList<>();
-        lore.add("§1Craftable pillager egg");
-        lore.add("§1this spawn egg summons:");
-        lore.add("§1Pillager!");
+        lore.add("§7Craftable pillager egg");
+        lore.add("§7this spawn egg summons:");
+        lore.add("§7Pillager!");
         meta.setLore(lore);
         meta.addEnchant(Enchantment.LUCK, 1, false);
         meta.addItemFlags(ItemFlag.HIDE_ENCHANTS);

@@ -23,11 +23,11 @@ public class EvokerSpawnItem {
     private static void createEvokerspawn() {
         ItemStack item = new ItemStack(Material.EVOKER_SPAWN_EGG, 1);
         ItemMeta meta = item.getItemMeta();
-        meta.setDisplayName("§3spawn Evoker");
+        meta.setDisplayName("§7Evoker");
         List<String> lore = new ArrayList<>();
-        lore.add("§1Craftable evoker egg");
-        lore.add("§1this spawn egg summons:");
-        lore.add("§1Evoker!");
+        lore.add("§7Craftable evoker egg");
+        lore.add("§7this spawn egg summons:");
+        lore.add("§7Evoker!");
         meta.setLore(lore);
         meta.addEnchant(Enchantment.LUCK, 1, false);
         meta.addItemFlags(ItemFlag.HIDE_ENCHANTS);

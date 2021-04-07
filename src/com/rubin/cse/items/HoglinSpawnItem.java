@@ -21,11 +21,11 @@ public class HoglinSpawnItem {
     private static void createHoglinspawn() {
         ItemStack item = new ItemStack(Material.HOGLIN_SPAWN_EGG, 1);
         ItemMeta meta = item.getItemMeta();
-        meta.setDisplayName("§3Spawn Hoglin");
+        meta.setDisplayName("§dHoglin");
         List<String> lore = new ArrayList<>();
-        lore.add("§1Craftable Hoglin spawn egg");
-        lore.add("§1this spawn egg summons:");
-        lore.add("§1Hoglin!");
+        lore.add("§7Craftable Hoglin spawn egg");
+        lore.add("§7this spawn egg summons:");
+        lore.add("§7Hoglin!");
         meta.setLore(lore);
         meta.addEnchant(Enchantment.LUCK, 1, false);
         meta.addItemFlags(ItemFlag.HIDE_ENCHANTS);

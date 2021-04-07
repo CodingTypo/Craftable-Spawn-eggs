@@ -21,11 +21,11 @@ public class ElderGuardianSpawnItem {
     private static void createElder_Guardianspawn() {
         ItemStack item = new ItemStack(Material.ELDER_GUARDIAN_SPAWN_EGG, 1);
         ItemMeta meta = item.getItemMeta();
-        meta.setDisplayName("§3Spawn Elder_Guardian");
+        meta.setDisplayName("§fElder_Guardian");
         List<String> lore = new ArrayList<>();
-        lore.add("§1Craftable Elder_Guardian spawn egg");
-        lore.add("§1this spawn egg summons:");
-        lore.add("§1Elder_Guardian!");
+        lore.add("§7Craftable Elder_Guardian spawn egg");
+        lore.add("§7this spawn egg summons:");
+        lore.add("§7Elder_Guardian!");
         meta.setLore(lore);
         meta.addEnchant(Enchantment.LUCK, 1, false);
         meta.addItemFlags(ItemFlag.HIDE_ENCHANTS);

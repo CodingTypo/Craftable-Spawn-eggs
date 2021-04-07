@@ -18,9 +18,9 @@ public class PreviousPageItem {
     private static void createpreviouspage() {
         ItemStack item = new ItemStack ( Material.BLUE_STAINED_GLASS_PANE,1);
         ItemMeta meta = item.getItemMeta ();
-        meta.setDisplayName ( "§3Previous page" );
+        meta.setDisplayName ( "§bPrevious page" );
         List<String> lore = new ArrayList<> ();
-        lore.add ( "§1Open the Previous page" );
+        lore.add ( "§3Open the Previous page" );
         meta.setLore ( lore );
         meta.addItemFlags ( ItemFlag.HIDE_ENCHANTS );
         meta.addItemFlags ( ItemFlag.HIDE_UNBREAKABLE );

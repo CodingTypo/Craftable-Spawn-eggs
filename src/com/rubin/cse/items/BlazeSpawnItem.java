@@ -21,11 +21,11 @@ public class BlazeSpawnItem {
     private static void createBlazespawn() {
         ItemStack item = new ItemStack(Material.BLAZE_SPAWN_EGG, 1);
         ItemMeta meta = item.getItemMeta();
-        meta.setDisplayName("§3Spawn Blaze");
+        meta.setDisplayName("§6Blaze");
         List<String> lore = new ArrayList<>();
-        lore.add("§1Craftable Blaze spawn egg");
-        lore.add("§1this spawn egg summons:");
-        lore.add("§1Blaze!");
+        lore.add("§7Craftable Blaze spawn egg");
+        lore.add("§7this spawn egg summons:");
+        lore.add("§7Blaze!");
         meta.setLore(lore);
         meta.addEnchant(Enchantment.LUCK, 1, false);
         meta.addItemFlags(ItemFlag.HIDE_ENCHANTS);

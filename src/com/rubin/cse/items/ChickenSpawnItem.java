@@ -21,11 +21,11 @@ public class ChickenSpawnItem {
     private static void createChickenspawn() {
         ItemStack item = new ItemStack(Material.CHICKEN_SPAWN_EGG, 1);
         ItemMeta meta = item.getItemMeta();
-        meta.setDisplayName("§3Spawn Chicken");
+        meta.setDisplayName("§fChicken");
         List<String> lore = new ArrayList<>();
-        lore.add("§1Craftable Chicken spawn egg");
-        lore.add("§1this spawn egg summons:");
-        lore.add("§1Chicken!");
+        lore.add("§7Craftable Chicken spawn egg");
+        lore.add("§7this spawn egg summons:");
+        lore.add("§7Chicken!");
         meta.setLore(lore);
         meta.addEnchant(Enchantment.LUCK, 1, false);
         meta.addItemFlags(ItemFlag.HIDE_ENCHANTS);

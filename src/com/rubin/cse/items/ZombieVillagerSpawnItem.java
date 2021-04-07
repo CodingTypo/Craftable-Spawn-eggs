@@ -23,11 +23,11 @@ public class ZombieVillagerSpawnItem {
     private static void createZombieVillagerspawn() {
         ItemStack item = new ItemStack(Material.ZOMBIE_VILLAGER_SPAWN_EGG, 1);
         ItemMeta meta = item.getItemMeta();
-        meta.setDisplayName("§3Spawn Zombie Villager");
+        meta.setDisplayName("§2Villager");
         List<String> lore = new ArrayList<>();
-        lore.add("§1Craftable Zombie Villager spawn egg");
-        lore.add("§1this spawn egg summons:");
-        lore.add("§1Zombie Villager!");
+        lore.add("§7Craftable Zombie Villager spawn egg");
+        lore.add("§7this spawn egg summons:");
+        lore.add("§7Zombie Villager!");
         meta.setLore(lore);
         meta.addEnchant(Enchantment.LUCK, 1, false);
         meta.addItemFlags(ItemFlag.HIDE_ENCHANTS);

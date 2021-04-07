@@ -23,11 +23,11 @@ public class TropicalFishSpawnItem {
     private static void createTropicalFishspawn() {
         ItemStack item = new ItemStack(Material.TROPICAL_FISH_SPAWN_EGG, 1);
         ItemMeta meta = item.getItemMeta();
-        meta.setDisplayName("§3spawn TropicalFish");
+        meta.setDisplayName("§eTropicalFish");
         List<String> lore = new ArrayList<>();
-        lore.add("§1Craftable tropical fish egg");
-        lore.add("§1this spawn egg summons:");
-        lore.add("§1Tropical Fish!");
+        lore.add("§7Craftable tropical fish egg");
+        lore.add("§7this spawn egg summons:");
+        lore.add("§7Tropical Fish!");
         meta.setLore(lore);
         meta.addEnchant(Enchantment.LUCK, 1, false);
         meta.addItemFlags(ItemFlag.HIDE_ENCHANTS);

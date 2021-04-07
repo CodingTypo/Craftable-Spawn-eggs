@@ -23,11 +23,11 @@ public class HorseSpawnItem {
     private static void createHorsespawn() {
         ItemStack item = new ItemStack(Material.HORSE_SPAWN_EGG, 1);
         ItemMeta meta = item.getItemMeta();
-        meta.setDisplayName("§3spawn Horse");
+        meta.setDisplayName("§6Horse");
         List<String> lore = new ArrayList<>();
-        lore.add("§1Craftable horse egg");
-        lore.add("§1this spawn egg summons:");
-        lore.add("§1Horse!");
+        lore.add("§7Craftable horse egg");
+        lore.add("§7this spawn egg summons:");
+        lore.add("§7Horse!");
         meta.setLore(lore);
         meta.addEnchant(Enchantment.LUCK, 1, false);
         meta.addItemFlags(ItemFlag.HIDE_ENCHANTS);

@@ -23,11 +23,11 @@ public class CaveSpiderSpawnItem {
     private static void createCaveSpiderspawn() {
         ItemStack item = new ItemStack(Material.CAVE_SPIDER_SPAWN_EGG, 1);
         ItemMeta meta = item.getItemMeta();
-        meta.setDisplayName("§3spawn Cave Spider");
+        meta.setDisplayName("§1Cave Spider");
         List<String> lore = new ArrayList<>();
-        lore.add("§1Craftable cave spider egg");
-        lore.add("§1this spawn egg summons:");
-        lore.add("§1Cave Spider!");
+        lore.add("§7Craftable cave spider egg");
+        lore.add("§7this spawn egg summons:");
+        lore.add("§7Cave Spider!");
         meta.setLore(lore);
         meta.addEnchant(Enchantment.LUCK, 1, false);
         meta.addItemFlags(ItemFlag.HIDE_ENCHANTS);

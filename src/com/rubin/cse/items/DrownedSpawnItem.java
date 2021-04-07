@@ -23,11 +23,11 @@ public class DrownedSpawnItem {
     private static void createDrownedspawn() {
         ItemStack item = new ItemStack(Material.DROWNED_SPAWN_EGG, 1);
         ItemMeta meta = item.getItemMeta();
-        meta.setDisplayName("§3Spawn Drowned");
+        meta.setDisplayName("§3Drowned");
         List<String> lore = new ArrayList<>();
-        lore.add("§1Craftable Drowned spawn egg");
-        lore.add("§1this spawn egg summons:");
-        lore.add("§1Drowned!");
+        lore.add("§7Craftable Drowned spawn egg");
+        lore.add("§7this spawn egg summons:");
+        lore.add("§7Drowned!");
         meta.setLore(lore);
         meta.addEnchant(Enchantment.LUCK, 1, false);
         meta.addItemFlags(ItemFlag.HIDE_ENCHANTS);

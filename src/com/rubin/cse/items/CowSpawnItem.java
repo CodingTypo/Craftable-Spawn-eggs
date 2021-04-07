@@ -21,11 +21,11 @@ public class CowSpawnItem {
     private static void createCowspawn() {
         ItemStack item = new ItemStack(Material.COW_SPAWN_EGG, 1);
         ItemMeta meta = item.getItemMeta();
-        meta.setDisplayName("§3Spawn Cow");
+        meta.setDisplayName("§8Cow");
         List<String> lore = new ArrayList<>();
-        lore.add("§1Craftable Cow spawn egg");
-        lore.add("§1this spawn egg summons:");
-        lore.add("§1Cow!");
+        lore.add("§7Craftable Cow spawn egg");
+        lore.add("§7this spawn egg summons:");
+        lore.add("§7Cow!");
         meta.setLore(lore);
         meta.addEnchant(Enchantment.LUCK, 1, false);
         meta.addItemFlags(ItemFlag.HIDE_ENCHANTS);

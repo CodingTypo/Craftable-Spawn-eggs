@@ -23,11 +23,11 @@ public class WitherSkeletonSpawnItem {
     private static void createWitherSkeletonspawn() {
         ItemStack item = new ItemStack(Material.WITHER_SKELETON_SPAWN_EGG, 1);
         ItemMeta meta = item.getItemMeta();
-        meta.setDisplayName("§3Spawn Wither Skeleton");
+        meta.setDisplayName("§0Wither Skeleton");
         List<String> lore = new ArrayList<>();
-        lore.add("§1Craftable Wither Skeleton spawn egg");
-        lore.add("§1this spawn egg summons:");
-        lore.add("§1Wither Skeleton!");
+        lore.add("§7Craftable Wither Skeleton spawn egg");
+        lore.add("§7this spawn egg summons:");
+        lore.add("§7Wither Skeleton!");
         meta.setLore(lore);
         meta.addEnchant(Enchantment.LUCK, 1, false);
         meta.addItemFlags(ItemFlag.HIDE_ENCHANTS);

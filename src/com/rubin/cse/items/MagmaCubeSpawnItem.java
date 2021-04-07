@@ -21,11 +21,11 @@ public class MagmaCubeSpawnItem {
     private static void createMagmacubespawn() {
         ItemStack item = new ItemStack(Material.MAGMA_CUBE_SPAWN_EGG, 1);
         ItemMeta meta = item.getItemMeta();
-        meta.setDisplayName("§3Spawn Magmacube");
+        meta.setDisplayName("§6Magmacube");
         List<String> lore = new ArrayList<>();
-        lore.add("§1Craftable Magmacube spawn egg");
-        lore.add("§1this spawn egg summons:");
-        lore.add("§1Magmacube!");
+        lore.add("§7Craftable Magmacube spawn egg");
+        lore.add("§7this spawn egg summons:");
+        lore.add("§7Magmacube!");
         meta.setLore(lore);
         meta.addEnchant(Enchantment.LUCK, 1, false);
         meta.addItemFlags(ItemFlag.HIDE_ENCHANTS);

@@ -21,11 +21,11 @@ public class ShulkerSpawnItem {
     private static void createShulkerspawn() {
         ItemStack item = new ItemStack(Material.SHULKER_SPAWN_EGG, 1);
         ItemMeta meta = item.getItemMeta();
-        meta.setDisplayName("§3Spawn Shulker");
+        meta.setDisplayName("§5Shulker");
         List<String> lore = new ArrayList<>();
-        lore.add("§1Craftable Shulker spawn egg");
-        lore.add("§1this spawn egg summons:");
-        lore.add("§1Shulker!");
+        lore.add("§7Craftable Shulker spawn egg");
+        lore.add("§7this spawn egg summons:");
+        lore.add("§7Shulker!");
         meta.setLore(lore);
         meta.addEnchant(Enchantment.LUCK, 1, false);
         meta.addItemFlags(ItemFlag.HIDE_ENCHANTS);

@@ -23,11 +23,11 @@ public class VexSpawnItem {
     private static void createVexspawn() {
         ItemStack item = new ItemStack(Material.VEX_SPAWN_EGG, 1);
         ItemMeta meta = item.getItemMeta();
-        meta.setDisplayName("§3spawn Vex");
+        meta.setDisplayName("§8Vex");
         List<String> lore = new ArrayList<>();
-        lore.add("§1Craftable vex egg");
-        lore.add("§1this spawn egg summons:");
-        lore.add("§1Vex!");
+        lore.add("§7Craftable vex egg");
+        lore.add("§7this spawn egg summons:");
+        lore.add("§7Vex!");
         meta.setLore(lore);
         meta.addEnchant(Enchantment.LUCK, 1, false);
         meta.addItemFlags(ItemFlag.HIDE_ENCHANTS);

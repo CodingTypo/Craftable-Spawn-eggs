@@ -21,11 +21,11 @@ public class OcelotSpawnItems {
     private static void createOcelotspawn() {
         ItemStack item = new ItemStack(Material.OCELOT_SPAWN_EGG, 1);
         ItemMeta meta = item.getItemMeta();
-        meta.setDisplayName("§3Spawn Ocelot");
+        meta.setDisplayName("§eocelot");
         List<String> lore = new ArrayList<>();
-        lore.add("§1Craftable Ocelot spawn egg");
-        lore.add("§1this spawn egg summons:");
-        lore.add("§1Ocelot!");
+        lore.add("§7Craftable Ocelot spawn egg");
+        lore.add("§7this spawn egg summons:");
+        lore.add("§7Ocelot!");
         meta.setLore(lore);
         meta.addEnchant(Enchantment.LUCK, 1, false);
         meta.addItemFlags(ItemFlag.HIDE_ENCHANTS);

@@ -23,11 +23,11 @@ public class PufferfishSpawnItem {
     private static void createPufferfishspawn() {
         ItemStack item = new ItemStack(Material.PUFFERFISH_SPAWN_EGG, 1);
         ItemMeta meta = item.getItemMeta();
-        meta.setDisplayName("§3spawn Pufferfish");
+        meta.setDisplayName("§ePufferfish");
         List<String> lore = new ArrayList<>();
-        lore.add("§1Craftable puffer fish egg");
-        lore.add("§1this spawn egg summons:");
-        lore.add("§1Pufferfish!");
+        lore.add("§7Craftable puffer fish egg");
+        lore.add("§7this spawn egg summons:");
+        lore.add("§7Pufferfish!");
         meta.setLore(lore);
         meta.addEnchant(Enchantment.LUCK, 1, false);
         meta.addItemFlags(ItemFlag.HIDE_ENCHANTS);

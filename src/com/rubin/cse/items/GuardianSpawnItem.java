@@ -21,11 +21,11 @@ public class GuardianSpawnItem {
     private static void createGuardianspawn() {
         ItemStack item = new ItemStack(Material.GUARDIAN_SPAWN_EGG, 1);
         ItemMeta meta = item.getItemMeta();
-        meta.setDisplayName("§3Spawn Guardian");
+        meta.setDisplayName("§3Guardian");
         List<String> lore = new ArrayList<>();
-        lore.add("§1Craftable Guardian spawn egg");
-        lore.add("§1this spawn egg summons:");
-        lore.add("§1Guardian!");
+        lore.add("§7Craftable Guardian spawn egg");
+        lore.add("§7this spawn egg summons:");
+        lore.add("§7Guardian!");
         meta.setLore(lore);
         meta.addEnchant(Enchantment.LUCK, 1, false);
         meta.addItemFlags(ItemFlag.HIDE_ENCHANTS);

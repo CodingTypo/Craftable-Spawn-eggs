@@ -23,11 +23,11 @@ public class EndermanSpawnItem {
     private static void createEndermanspawn() {
         ItemStack item = new ItemStack(Material.ENDERMAN_SPAWN_EGG, 1);
         ItemMeta meta = item.getItemMeta();
-        meta.setDisplayName("§3spawn Enderman");
+        meta.setDisplayName("§0Enderman");
         List<String> lore = new ArrayList<>();
-        lore.add("§1Craftable enderman egg");
-        lore.add("§1this spawn egg summons:");
-        lore.add("§1Enderman!");
+        lore.add("§7Craftable enderman egg");
+        lore.add("§7this spawn egg summons:");
+        lore.add("§7Enderman!");
         meta.setLore(lore);
         meta.addEnchant(Enchantment.LUCK, 1, false);
         meta.addItemFlags(ItemFlag.HIDE_ENCHANTS);

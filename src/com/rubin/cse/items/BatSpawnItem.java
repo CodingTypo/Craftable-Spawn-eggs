@@ -22,11 +22,11 @@ public class BatSpawnItem {
     private static void createBatspawn() {
         ItemStack item = new ItemStack(Material.BAT_SPAWN_EGG, 1);
         ItemMeta meta = item.getItemMeta();
-        meta.setDisplayName("§3Spawn Bat");
+        meta.setDisplayName("§3Bat");
         List<String> lore = new ArrayList<>();
-        lore.add("§1Craftable Bat spawn egg");
-        lore.add("§1this spawn egg summons:");
-        lore.add("§1Bat!");
+        lore.add("§8Craftable Bat spawn egg");
+        lore.add("§7this spawn egg summons:");
+        lore.add("§7Bat!");
         meta.setLore(lore);
         meta.addEnchant(Enchantment.LUCK, 1, false);
         meta.addItemFlags(ItemFlag.HIDE_ENCHANTS);

@@ -23,11 +23,11 @@ public class SkeletonSpawnItem {
     private static void createSkeletonspawn() {
         ItemStack item = new ItemStack(Material.SKELETON_SPAWN_EGG, 1);
         ItemMeta meta = item.getItemMeta();
-        meta.setDisplayName("§3Spawn Skeleton");
+        meta.setDisplayName("§fSkeleton");
         List<String> lore = new ArrayList<>();
-        lore.add("§1Craftable Skeleton spawn egg");
-        lore.add("§1this spawn egg summons:");
-        lore.add("§1Skeleton!");
+        lore.add("§7Craftable Skeleton spawn egg");
+        lore.add("§7this spawn egg summons:");
+        lore.add("§7Skeleton!");
         meta.setLore(lore);
         meta.addEnchant(Enchantment.LUCK, 1, false);
         meta.addItemFlags(ItemFlag.HIDE_ENCHANTS);

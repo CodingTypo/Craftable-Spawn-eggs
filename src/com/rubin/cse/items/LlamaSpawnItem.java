@@ -21,11 +21,11 @@ public class LlamaSpawnItem {
     private static void createLlamaspawn() {
         ItemStack item = new ItemStack(Material.LLAMA_SPAWN_EGG, 1);
         ItemMeta meta = item.getItemMeta();
-        meta.setDisplayName("§3Spawn Llama");
+        meta.setDisplayName("§fLlama");
         List<String> lore = new ArrayList<>();
-        lore.add("§1Craftable Llama spawn egg");
-        lore.add("§1this spawn egg summons:");
-        lore.add("§1Llama!");
+        lore.add("§7Craftable Llama spawn egg");
+        lore.add("§7this spawn egg summons:");
+        lore.add("§7Llama!");
         meta.setLore(lore);
         meta.addEnchant(Enchantment.LUCK, 1, false);
         meta.addItemFlags(ItemFlag.HIDE_ENCHANTS);

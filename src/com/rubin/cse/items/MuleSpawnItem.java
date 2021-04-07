@@ -21,11 +21,11 @@ public class MuleSpawnItem {
     private static void createmulespawn() {
         ItemStack item = new ItemStack(Material.MULE_SPAWN_EGG, 1);
         ItemMeta meta = item.getItemMeta();
-        meta.setDisplayName("§3Spawn Mule");
+        meta.setDisplayName("§6Mule");
         List<String> lore = new ArrayList<>();
-        lore.add("§1Craftable mule spawn egg");
-        lore.add("§1this spawn egg summons:");
-        lore.add("§1Mule!");
+        lore.add("§7Craftable mule spawn egg");
+        lore.add("§7this spawn egg summons:");
+        lore.add("§7Mule!");
         meta.setLore(lore);
         meta.addEnchant(Enchantment.LUCK, 1, false);
         meta.addItemFlags(ItemFlag.HIDE_ENCHANTS);

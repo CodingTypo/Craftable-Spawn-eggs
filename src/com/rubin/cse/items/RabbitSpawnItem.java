@@ -21,11 +21,11 @@ public class RabbitSpawnItem {
     private static void createRabbitspawn() {
         ItemStack item = new ItemStack(Material.RABBIT_SPAWN_EGG, 1);
         ItemMeta meta = item.getItemMeta();
-        meta.setDisplayName("§3Spawn Rabbit");
+        meta.setDisplayName("§fRabbit");
         List<String> lore = new ArrayList<>();
-        lore.add("§1Craftable Rabbit spawn egg");
-        lore.add("§1this spawn egg summons:");
-        lore.add("§1Rabbit!");
+        lore.add("§7Craftable Rabbit spawn egg");
+        lore.add("§7this spawn egg summons:");
+        lore.add("§7Rabbit!");
         meta.setLore(lore);
         meta.addEnchant(Enchantment.LUCK, 1, false);
         meta.addItemFlags(ItemFlag.HIDE_ENCHANTS);

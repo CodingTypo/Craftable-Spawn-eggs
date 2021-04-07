@@ -21,11 +21,11 @@ public class PigSpawnItem {
     private static void createpigspawn() {
         ItemStack item = new ItemStack(Material.PIG_SPAWN_EGG, 1);
         ItemMeta meta = item.getItemMeta();
-        meta.setDisplayName("§3Spawn pig");
+        meta.setDisplayName("§dpig");
         List<String> lore = new ArrayList<>();
-        lore.add("§1Craftable pig spawn egg");
-        lore.add("§1this spawn egg summons:");
-        lore.add("§1pig!");
+        lore.add("§7Craftable pig spawn egg");
+        lore.add("§7this spawn egg summons:");
+        lore.add("§7pig!");
         meta.setLore(lore);
         meta.addEnchant(Enchantment.LUCK, 1, false);
         meta.addItemFlags(ItemFlag.HIDE_ENCHANTS);

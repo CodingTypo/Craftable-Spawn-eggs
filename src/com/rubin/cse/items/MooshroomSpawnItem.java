@@ -23,11 +23,11 @@ public class MooshroomSpawnItem {
     private static void createMooshroomspawn() {
         ItemStack item = new ItemStack(Material.MOOSHROOM_SPAWN_EGG, 1);
         ItemMeta meta = item.getItemMeta();
-        meta.setDisplayName("§3spawn Mooshroom");
+        meta.setDisplayName("§cMooshroom");
         List<String> lore = new ArrayList<>();
-        lore.add("§1Craftable mooshroom egg");
-        lore.add("§1this spawn egg summons:");
-        lore.add("§1Mooshroom!");
+        lore.add("§7Craftable mooshroom egg");
+        lore.add("§7this spawn egg summons:");
+        lore.add("§7Mooshroom!");
         meta.setLore(lore);
         meta.addEnchant(Enchantment.LUCK, 1, false);
         meta.addItemFlags(ItemFlag.HIDE_ENCHANTS);

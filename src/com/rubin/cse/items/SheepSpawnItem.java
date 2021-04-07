@@ -21,11 +21,11 @@ public class SheepSpawnItem {
     private static void createSheepspawn() {
         ItemStack item = new ItemStack(Material.SHEEP_SPAWN_EGG, 1);
         ItemMeta meta = item.getItemMeta();
-        meta.setDisplayName("§3spawn Sheep");
+        meta.setDisplayName("§fSheep");
         List<String> lore = new ArrayList<>();
-        lore.add("§1Craftable sheep egg");
-        lore.add("§1this spawn egg summons:");
-        lore.add("§1Sheep!");
+        lore.add("§7Craftable sheep egg");
+        lore.add("§7this spawn egg summons:");
+        lore.add("§7Sheep!");
         meta.setLore(lore);
         meta.addEnchant(Enchantment.LUCK, 1, false);
         meta.addItemFlags(ItemFlag.HIDE_ENCHANTS);

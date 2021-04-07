@@ -23,11 +23,11 @@ public class EndermiteSpawnItem {
     private static void createEndermitespawn() {
         ItemStack item = new ItemStack(Material.ENDERMITE_SPAWN_EGG, 1);
         ItemMeta meta = item.getItemMeta();
-        meta.setDisplayName("§3spawn Endermite");
+        meta.setDisplayName("§5Endermite");
         List<String> lore = new ArrayList<>();
-        lore.add("§1Craftable endermite egg");
-        lore.add("§1this spawn egg summons:");
-        lore.add("§1Endermite!");
+        lore.add("§7Craftable endermite egg");
+        lore.add("§7this spawn egg summons:");
+        lore.add("§7Endermite!");
         meta.setLore(lore);
         meta.addEnchant(Enchantment.LUCK, 1, false);
         meta.addItemFlags(ItemFlag.HIDE_ENCHANTS);

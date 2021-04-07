@@ -21,11 +21,11 @@ public class PiglinSpawnItem {
     private static void createPiglinspawn() {
         ItemStack item = new ItemStack(Material.PIGLIN_SPAWN_EGG, 1);
         ItemMeta meta = item.getItemMeta();
-        meta.setDisplayName("§3Spawn Piglin");
+        meta.setDisplayName("§6Piglin");
         List<String> lore = new ArrayList<>();
-        lore.add("§1Craftable Piglin spawn egg");
-        lore.add("§1this spawn egg summons:");
-        lore.add("§1Piglin!");
+        lore.add("§7Craftable Piglin spawn egg");
+        lore.add("§7this spawn egg summons:");
+        lore.add("§7Piglin!");
         meta.setLore(lore);
         meta.addEnchant(Enchantment.LUCK, 1, false);
         meta.addItemFlags(ItemFlag.HIDE_ENCHANTS);

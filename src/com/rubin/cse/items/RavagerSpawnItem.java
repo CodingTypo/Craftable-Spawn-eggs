@@ -23,11 +23,11 @@ public class RavagerSpawnItem {
     private static void createRavagerspawn() {
         ItemStack item = new ItemStack(Material.RAVAGER_SPAWN_EGG, 1);
         ItemMeta meta = item.getItemMeta();
-        meta.setDisplayName("§3spawn Ravager");
+        meta.setDisplayName("§8Ravager");
         List<String> lore = new ArrayList<>();
-        lore.add("§1Craftable ravager egg");
-        lore.add("§1this spawn egg summons:");
-        lore.add("§1Ravager!");
+        lore.add("§7Craftable ravager egg");
+        lore.add("§7this spawn egg summons:");
+        lore.add("§7Ravager!");
         meta.setLore(lore);
         meta.addEnchant(Enchantment.LUCK, 1, false);
         meta.addItemFlags(ItemFlag.HIDE_ENCHANTS);

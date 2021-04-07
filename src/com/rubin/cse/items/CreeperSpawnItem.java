@@ -21,11 +21,11 @@ public class CreeperSpawnItem {
     private static void createCreeperspawn() {
         ItemStack item = new ItemStack(Material.CREEPER_SPAWN_EGG, 1);
         ItemMeta meta = item.getItemMeta();
-        meta.setDisplayName("§3Spawn Creeper");
+        meta.setDisplayName("§aCreeper");
         List<String> lore = new ArrayList<>();
-        lore.add("§1Craftable Creeper spawn egg");
-        lore.add("§1this spawn egg summons:");
-        lore.add("§1Creeper!");
+        lore.add("§7Craftable Creeper spawn egg");
+        lore.add("§7this spawn egg summons:");
+        lore.add("§7Creeper!");
         meta.setLore(lore);
         meta.addEnchant(Enchantment.LUCK, 1, false);
         meta.addItemFlags(ItemFlag.HIDE_ENCHANTS);

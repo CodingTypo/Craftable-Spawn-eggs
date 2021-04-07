@@ -21,11 +21,11 @@ public class GhastSpawnItem {
     private static void createGhastspawn() {
         ItemStack item = new ItemStack(Material.GHAST_SPAWN_EGG, 1);
         ItemMeta meta = item.getItemMeta();
-        meta.setDisplayName("§3Spawn Ghast");
+        meta.setDisplayName("§fGhast");
         List<String> lore = new ArrayList<>();
-        lore.add("§1Craftable Ghast spawn egg");
-        lore.add("§1this spawn egg summons:");
-        lore.add("§1Ghast!");
+        lore.add("§7Craftable Ghast spawn egg");
+        lore.add("§7this spawn egg summons:");
+        lore.add("§7Ghast!");
         meta.setLore(lore);
         meta.addEnchant(Enchantment.LUCK, 1, false);
         meta.addItemFlags(ItemFlag.HIDE_ENCHANTS);

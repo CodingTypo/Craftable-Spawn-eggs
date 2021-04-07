@@ -23,11 +23,11 @@ public class VillagerSpawnItem {
     private static void createVillagerspawn() {
         ItemStack item = new ItemStack(Material.VILLAGER_SPAWN_EGG, 1);
         ItemMeta meta = item.getItemMeta();
-        meta.setDisplayName("§3spawn Villager");
+        meta.setDisplayName("§6Villager");
         List<String> lore = new ArrayList<>();
-        lore.add("§1Craftable villager egg");
-        lore.add("§1this spawn egg summons:");
-        lore.add("§1Villager!");
+        lore.add("§7Craftable villager egg");
+        lore.add("§7this spawn egg summons:");
+        lore.add("§7Villager!");
         meta.setLore(lore);
         meta.addEnchant(Enchantment.LUCK, 1, false);
         meta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
