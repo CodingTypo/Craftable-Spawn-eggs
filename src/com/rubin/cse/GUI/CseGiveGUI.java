@@ -47,6 +47,7 @@ public class CseGiveGUI implements InventoryHolder {
 
         // spawn eggs
         for (int i = 9; i <9; i++);{
+
             item = CreateItem("§7§lCow Spawn Egg",Material.COW_SPAWN_EGG, Collections.singletonList("§7give yourself a cow_spawn_egg"));
             inv.setItem(9, item); }
 

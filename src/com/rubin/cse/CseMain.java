@@ -13,6 +13,7 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.plugin.java.JavaPlugin;
+import java.io.File;
 
 public class CseMain extends JavaPlugin implements Listener {
 
@@ -21,8 +22,7 @@ public class CseMain extends JavaPlugin implements Listener {
         getServer ().getConsoleSender ().sendMessage ( ChatColor.GREEN + "[Craftable_Spawn_Eggs] plugin is enabled!" );
         getCommand ( "csegive" ).setExecutor ( new CseGiveCommand () );
         getCommand ( "csetoggle" ).setExecutor ( new CseToggleCommand () );
-        getConfig().options().copyDefaults();
-        this.saveDefaultConfig();
+        loadconfig();
         SheepSpawnItem.init ();
         CowSpawnItem.init ();
         PigSpawnItem.init ();
@@ -162,20 +162,31 @@ public class CseMain extends JavaPlugin implements Listener {
                 Player player = (Player) e.getWhoClicked ();
                 if (e.getCurrentItem () == null) {
                     return;
-                } else if (e.getSlot () == 4) {
-                    if (!getConfig().getBoolean("spawn_eggs.bat")) {
-                        //bat = false, toggle to: true
-                        getConfig().contains("true", true);
+                } else if (e.getSlot () == 5) {
+
+
+                        getConfig().set("spawn_eggs.bat","true");
+                        saveConfig();
+                        reloadConfig();
+
+
                         }
 
 
-                    } else {
-                        //true code
-                        player.sendMessage(ChatColor.YELLOW + "(!) Craftable bat spawn eggs are already toggled true");
+                    }
+
 
                     }
                 }
-            }
-        }
+
+    public void loadconfig(){
+        getConfig().options().copyDefaults(true);
+        saveConfig();
+
     }
+
+
+
+    }
+
 
