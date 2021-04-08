@@ -19,7 +19,7 @@ public class CseMain extends JavaPlugin implements Listener {
 
     @Override
     public void onEnable() {
-        getServer ().getConsoleSender ().sendMessage ( ChatColor.GREEN + "[Craftable_Spawn_Eggs] plugin is enabled!" );
+        getServer ().getConsoleSender ().sendMessage ( ChatColor.GREEN + "[Craftable_Spawn_Eggs % dev config] plugin is enabled!" );
         getCommand ( "csegive" ).setExecutor ( new CseGiveCommand () );
         getCommand ( "csetoggle" ).setExecutor ( new CseToggleCommand () );
         loadconfig();
@@ -137,7 +137,7 @@ public class CseMain extends JavaPlugin implements Listener {
         getServer ().getPluginManager ().registerEvents ( new PiglinSpawnEvents (),this );
         getServer ().getPluginManager ().registerEvents ( new GUIEvents (),this );
         getServer ().getPluginManager ().registerEvents ( new GUIEvents2 (),this );
-        getServer ().getPluginManager ().registerEvents ( new CseToggleGUIEvents(),this );
+        getServer ().getPluginManager ().registerEvents ( new CseToggleGUIEvents(this),this );
         getServer ().getPluginManager ().registerEvents ( this,this );
     }
 
@@ -146,42 +146,16 @@ public class CseMain extends JavaPlugin implements Listener {
         getServer ().getConsoleSender ().sendMessage ( ChatColor.RED + "[Craftable_Spawn_Eggs] plugin is disabled!" );
     }
 
-    //boolean config fix
-    boolean bat = getConfig().getBoolean("bat");
 
 
-    //CseToggleGUIEvents
-    @EventHandler
-    public void onClick(InventoryClickEvent e) {
-        if (e.getClickedInventory () == null) {
-            return;
-        }
-        if (e.getClickedInventory ().getHolder () instanceof CseToggleGUI) {
-            e.setCancelled ( true );
-            if (e.isLeftClick ()) {
-                Player player = (Player) e.getWhoClicked ();
-                if (e.getCurrentItem () == null) {
-                    return;
-                } else if (e.getSlot () == 5) {
 
-
-                        getConfig().set("spawn_eggs.bat","true");
-                        saveConfig();
-                        reloadConfig();
-
-
-                        }
-
-
-                    }
-
-
-                    }
-                }
-
+    //config load fuction
     public void loadconfig(){
-        getConfig().options().copyDefaults(true);
-        saveConfig();
+
+        this.getConfig().options().copyDefaults(true);
+        this.saveConfig();
+        this.reloadConfig();
+
 
     }
 

@@ -1,67 +1,198 @@
-spawn_eggs:
-  bat: true
-  cat: true
-  chicken: true
-  cod: true
-  cow: true
-  donkey: true
-  fox: true
-  horse: true
-  mooshroom: true
-  mule: true
-  ocelot: true
-  panda: true
-  parrot: true
-  pig: true
-  rabbit: true
-  salmon: true
-  sheep: true
-  skeleton_horse: true
-  snow_man: true
-  squid: true
-  strider: true
-  tropical_fish: true
-  turtle: true
-  villager: true
-  blaze: true
-  creeper: true
-  drowned: true
-  elder_guardian: true
-  ender_dragon: true
-  endermite: true
-  evoker: true
-  ghast: true
-  guardian: true
-  hoglin: true
-  husk: true
-  illusioner: true
-  magma_cube: true
-  phantom: true
-  piglin: true
-  piglin_brute: true
-  pillager: true
-  ravager: true
-  shulker: true
-  silverfish: true
-  skeleton: true
-  slime: true
-  stray: true
-  vex: true
-  vindicator: true
-  witch: true
-  wither: true
-  wither_skeleton: true
-  zoglin: true
-  zombie: true
-  zombie_villager: true
-  bee: true
-  cave_spider: true
-  dolphin: true
-  enderman: true
-  llama: true
-  polar_bear: true
-  pufferfish: true
-  spider: true
-  wolf: true
-  zombified_piglin: true
-test: hall
+# Configuration for spawn eggs
+enabled_spawn_eggs:
+  bat:
+    enabled: true
+    crafting_item: 0
+  cat:
+    enabled: true
+    crafting_item: 0
+  chicken:
+    enabled: true
+    crafting_item: 0
+  cod:
+    enabled: true
+    crafting_item: 0
+  cow:
+    enabled: true
+    crafting_item: 0
+  donkey:
+    enabled: true
+    crafting_item: 0
+  fox:
+    enabled: true
+    crafting_item: 0
+  horse:
+    enabled: true
+    crafting_item: 0
+  mooshroom:
+    enabled: true
+    crafting_item: 0
+  mule:
+    enabled: true
+    crafting_item: 0
+  ocelot:
+    enabled: true
+    crafting_item: 0
+  panda:
+    enabled: true
+    crafting_item: 0
+  parrot:
+    enabled: true
+    crafting_item: 0
+  pig:
+    enabled: true
+    crafting_item: 0
+  rabbit:
+    enabled: true
+    crafting_item: 0
+  salmon:
+    enabled: true
+    crafting_item: 0
+  sheep:
+    enabled: true
+    crafting_item: 0
+  skeleton_horse:
+    enabled: true
+    crafting_item: 0
+  snow_man:
+    enabled: true
+    crafting_item: 0
+  squid:
+    enabled: true
+    crafting_item: 0
+  strider:
+    enabled: true
+    crafting_item: 0
+  tropical_fish:
+    enabled: true
+    crafting_item: 0
+  turtle:
+    enabled: true
+    crafting_item: 0
+  villager:
+    enabled: true
+    crafting_item: 0
+  blaze:
+    enabled: true
+    crafting_item: 0
+  creeper:
+    enabled: true
+    crafting_item: 0
+  drowned:
+    enabled: true
+    crafting_item: 0
+  elder_guardian:
+    enabled: true
+    crafting_item: 0
+  ender_dragon:
+    enabled: true
+    crafting_item: 0
+  endermite:
+    enabled: true
+    crafting_item: 0
+  evoker:
+    enabled: true
+    crafting_item: 0
+  ghast:
+    enabled: true
+    crafting_item: 0
+  guardian:
+    enabled: true
+    crafting_item: 0
+  hoglin:
+    enabled: true
+    crafting_item: 0
+  husk:
+    enabled: true
+    crafting_item: 0
+  illusioner:
+    enabled: true
+    crafting_item: 0
+  magma_cube:
+    enabled: true
+    crafting_item: 0
+  phantom:
+    enabled: true
+    crafting_item: 0
+  piglin:
+    enabled: true
+    crafting_item: 0
+  piglin_brute:
+    enabled: true
+    crafting_item: 0
+  pillager:
+    enabled: true
+    crafting_item: 0
+  ravager:
+    enabled: true
+    crafting_item: 0
+  shulker:
+    enabled: true
+    crafting_item: 0
+  silverfish:
+    enabled: true
+    crafting_item: 0
+  skeleton:
+    enabled: true
+    crafting_item: 0
+  slime:
+    enabled: true
+    crafting_item: 0
+  stray:
+    enabled: true
+    crafting_item: 0
+  vex:
+    enabled: true
+    crafting_item: 0
+  vindicator:
+    enabled: true
+    crafting_item: 0
+  witch:
+    enabled: true
+    crafting_item: 0
+  wither:
+    enabled: true
+    crafting_item: 0
+  wither_skeleton:
+    enabled: true
+    crafting_item: 0
+  zoglin:
+    enabled: true
+    crafting_item: 0
+  zombie:
+    enabled: true
+    crafting_item: 0
+  zombie_villager:
+    enabled: true
+    crafting_item: 0
+  bee:
+    enabled: true
+    crafting_item: 0
+  cave_spider:
+    enabled: true
+    crafting_item: 0
+  dolphin:
+    enabled: true
+    crafting_item: 0
+  enderman:
+    enabled: true
+    crafting_item: 0
+  llama:
+    enabled: true
+    crafting_item: 0
+  polar_bear:
+    enabled: true
+    crafting_item: 0
+  pufferfish:
+    enabled: true
+    crafting_item: 0
+  spider:
+    enabled: true
+    crafting_item: 0
+  wolf:
+    enabled: true
+    crafting_item: 0
+  zombified_piglin:
+    enabled: true
+    crafting_item: 0
+#made by Coding_typo whit help form Geert225

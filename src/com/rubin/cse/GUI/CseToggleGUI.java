@@ -1,5 +1,6 @@
 package com.rubin.cse.GUI;
 
+import com.rubin.cse.CseMain;
 import com.rubin.cse.items.*;
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
@@ -14,12 +15,16 @@ import java.util.List;
 
 public class CseToggleGUI implements InventoryHolder {
 
+
+
     private  Inventory inv;
 
     public CseToggleGUI() {
         inv = Bukkit.createInventory(this, 45, "CseToggle");//54 max size
         init();
     }
+
+
 
     private void init()  {
         ItemStack item;
@@ -171,4 +176,5 @@ public class CseToggleGUI implements InventoryHolder {
     public Inventory getInventory() {
         return inv;
     }
+
 }
