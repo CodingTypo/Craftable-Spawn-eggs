@@ -20,8 +20,9 @@ public class CseMain extends JavaPlugin implements Listener {
     @Override
     public void onEnable() {
         getServer ().getConsoleSender ().sendMessage ( ChatColor.GREEN + "[Craftable_Spawn_Eggs % dev config] plugin is enabled!" );
-        getCommand ( "csegive" ).setExecutor ( new CseGiveCommand () );
-        getCommand ( "csetoggle" ).setExecutor ( new CseToggleCommand () );
+        getCommand ( "csegive" ).setExecutor ( new CseGiveCommand (this) );
+        getCommand ( "csetoggle" ).setExecutor ( new CseToggleCommand (this) );
+        getCommand ( "csereload" ).setExecutor ( new CseReloadCommand (this) );
         loadconfig();
         SheepSpawnItem.init ();
         CowSpawnItem.init ();
