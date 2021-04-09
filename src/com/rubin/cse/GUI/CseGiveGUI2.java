@@ -154,6 +154,10 @@ public class CseGiveGUI2 implements InventoryHolder {
             item = CreateItem("§7§lPiglin Spawn Egg",Material.PIGLIN_SPAWN_EGG, Collections.singletonList("§7give yourself a Piglin_spawn_egg"));
             inv.setItem(34, item); }
 
+        for (int i = 35; i <35; i++);{
+            item = CreateItem("§7§lCreeper Spawn Egg",Material.CREEPER_SPAWN_EGG, Collections.singletonList("§7give yourself a Creeper_spawn_egg"));
+            inv.setItem(35, item); }
+
 
     }
     private  ItemStack CreateItem(String name, Material mat, List<String> lore) {

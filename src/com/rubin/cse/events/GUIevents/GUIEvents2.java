@@ -2,6 +2,7 @@ package com.rubin.cse.events.GUIevents;
 
 import com.rubin.cse.GUI.CseGiveGUI;
 import com.rubin.cse.GUI.CseGiveGUI2;
+import com.rubin.cse.GUI.CseGiveGUI3;
 import com.rubin.cse.items.*;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
@@ -127,6 +128,10 @@ public class GUIEvents2 implements Listener {
                     player.sendMessage("§8[§a§lCraftable Spawn eggs§8] §2>> §bYou gave yourself 1 Piglin_Spawn_egg");
                     player.getInventory().addItem(PiglinSpawnItem.piglinspawn);
                 }
+                if (e.getCurrentItem().getType() == Material.CREEPER_SPAWN_EGG) {
+                    player.sendMessage("§8[§a§lCraftable Spawn eggs§8] §2>> §bYou gave yourself 1 Creeper_Spawn_egg");
+                    player.getInventory().addItem(CreeperSpawnItem.creeperspawn);
+                }
 
 
                 else if (e.getSlot() == 4) {
@@ -137,9 +142,10 @@ public class GUIEvents2 implements Listener {
                 if (e.getSlot() == 3) {
                     player.closeInventory();
                     player.openInventory (gui.getInventory());
-                }
-                else if (e.getSlot() == 5) {
+                } else if (e.getSlot() == 5) {
+                    CseGiveGUI3 gui3 =  new CseGiveGUI3 ();
                     player.closeInventory ();
+                    player.openInventory (gui3.getInventory ());
                 }
             }
         }

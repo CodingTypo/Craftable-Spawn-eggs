@@ -6,6 +6,7 @@ import com.rubin.cse.events.*;
 import com.rubin.cse.events.GUIevents.CseToggleGUIEvents;
 import com.rubin.cse.events.GUIevents.GUIEvents;
 import com.rubin.cse.events.GUIevents.GUIEvents2;
+import com.rubin.cse.events.GUIevents.GUIEvents3;
 import com.rubin.cse.items.*;
 import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
@@ -18,7 +19,7 @@ public class CseMain extends JavaPlugin implements Listener {
 
     @Override
     public void onEnable() {
-        getServer ().getConsoleSender ().sendMessage ( ChatColor.GREEN + "[Craftable_Spawn_Eggs] plugin is enabled!" );
+        getServer ().getConsoleSender ().sendMessage ("§b§8[§a§lCraftable Spawn eggs§8] §2>> plugin is enabled!" );
         getCommand ( "csegive" ).setExecutor ( new CseGiveCommand () );
         getCommand ( "csetoggle" ).setExecutor ( new CseToggleCommand () );
         getConfig().options().copyDefaults();
@@ -82,6 +83,8 @@ public class CseMain extends JavaPlugin implements Listener {
         ToggleFalseItem.init ();
         NextPageItem.init ();
         PreviousPageItem.init ();
+        CreeperSpawnItem.init ();
+        BlazeSpawnItem.init ();
         getServer ().getPluginManager ().registerEvents ( new CowSpawnEvents (),this );
         getServer ().getPluginManager ().registerEvents ( new SheepSpawnEvents (),this );
         getServer ().getPluginManager ().registerEvents ( new PigSpawnEvents (),this );
@@ -137,13 +140,14 @@ public class CseMain extends JavaPlugin implements Listener {
         getServer ().getPluginManager ().registerEvents ( new PiglinSpawnEvents (),this );
         getServer ().getPluginManager ().registerEvents ( new GUIEvents (),this );
         getServer ().getPluginManager ().registerEvents ( new GUIEvents2 (),this );
+        getServer ().getPluginManager ().registerEvents ( new GUIEvents3 (),this );
         getServer ().getPluginManager ().registerEvents ( new CseToggleGUIEvents(),this );
         getServer ().getPluginManager ().registerEvents ( this,this );
     }
 
     @Override
     public void onDisable() {
-        getServer ().getConsoleSender ().sendMessage ( ChatColor.RED + "[Craftable_Spawn_Eggs] plugin is disabled!" );
+        getServer ().getConsoleSender ().sendMessage ("§b§8[§a§lCraftable Spawn eggs§8] §c>> plugin is disabled!" );
     }
 
     //boolean config fix
