@@ -23,7 +23,7 @@ public class ZombieVillagerSpawnItem {
     private static void createZombieVillagerspawn() {
         ItemStack item = new ItemStack(Material.ZOMBIE_VILLAGER_SPAWN_EGG, 1);
         ItemMeta meta = item.getItemMeta();
-        meta.setDisplayName("§2Villager");
+        meta.setDisplayName("§2Zombie villager");
         List<String> lore = new ArrayList<>();
         lore.add("§7Craftable Zombie Villager spawn egg");
         lore.add("§7this spawn egg summons:");

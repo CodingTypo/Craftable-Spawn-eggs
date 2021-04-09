@@ -11,12 +11,12 @@ public class CseGiveCommand implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
         if (!(sender instanceof Player)) {
-            sender.sendMessage(ChatColor.RED + "This command can only be used by players!");
+            sender.sendMessage("§b§8[§a§lCraftable Spawn eggs§8] §4[§c§lError§4] >> §cThis command can only be used by players!");
             return  true;
         }
         if (cmd.getName ().equalsIgnoreCase ( "csegive" ))
             if (!sender.hasPermission ( "csegive2" )) {
-                sender.sendMessage ( ChatColor.RED + "(!) You are not permitted to do this!" );
+                sender.sendMessage ("§b§8[§a§lCraftable Spawn eggs§8] §4[§c§lError§4] >> §cYou are not permitted to use this command!" );
                 return true;
             }
 
@@ -25,7 +25,7 @@ public class CseGiveCommand implements CommandExecutor {
          if(sender.hasPermission ( "csegive2" )){
             CseGiveGUI gui =  new CseGiveGUI();
             player.openInventory(gui.getInventory());
-            player.sendMessage(ChatColor.YELLOW + "(!) You opened the /csegive menu!");
+            player.sendMessage("§b§8[§a§lCraftable Spawn eggs§8] §2>> §eYou opened the /csegive menu!");
         }
 
         return true;

@@ -11,12 +11,12 @@ public class CseToggleCommand implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
         if (!(sender instanceof Player)) {
-            sender.sendMessage(ChatColor.RED + "This command can only be used by players!");
+            sender.sendMessage("§b§8[§a§lCraftable Spawn eggs§8] §4[§c§lError§4] >> §cThis command can only be used by players!");
             return  true;
         }
         if (cmd.getName ().equalsIgnoreCase ( "csetoggle" ))
             if (!sender.hasPermission ( "csetoggle" )) {
-                sender.sendMessage ( ChatColor.RED + "(!) You are not permitted to do this!" );
+                sender.sendMessage ("§b§8[§a§lCraftable Spawn eggs§8] §4[§c§lError§4] >> §cYou are not permitted to use this command!" );
                 return true;
             }
 
@@ -24,7 +24,7 @@ public class CseToggleCommand implements CommandExecutor {
         if (cmd.getName().equalsIgnoreCase("csetoggle")) {
             CseToggleGUI gui =  new CseToggleGUI();
             player.openInventory(gui.getInventory());
-            player.sendMessage(ChatColor.YELLOW + "(!) You opened the /csetoggle menu!");
+            player.sendMessage(ChatColor.YELLOW + "§b§8[§a§lCraftable Spawn eggs§8] §2>> §eYou opened the /csetoggle menu!");
         }
         return true;
     }

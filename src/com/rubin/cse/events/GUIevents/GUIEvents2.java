@@ -24,7 +24,7 @@ public class GUIEvents2 implements Listener {
                     return;
                 }
                 if (e.getCurrentItem().getType() == Material.BEE_SPAWN_EGG) {
-                    player.sendMessage("§8[§a§lCraftable Spawn eggs§8] §2>> §b§8[§a§lCraftable Spawn eggs§8] §2>> §bYou gave yourself 1 Bee_Spawn_egg");
+                    player.sendMessage("§8[§a§lCraftable Spawn eggs§8] §2>>  §bYou gave yourself 1 Bee_Spawn_egg");
                     player.getInventory().addItem(BeeSpawnItem.beespawn);
                 }
                 if (e.getCurrentItem().getType() == Material.SPIDER_SPAWN_EGG) {
