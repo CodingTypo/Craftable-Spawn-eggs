@@ -1,6 +1,6 @@
 package com.rubin.cse.events;
 
-import com.rubin.cse.items.*;
+import com.rubin.cse.items.SpawnEggs.*;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;

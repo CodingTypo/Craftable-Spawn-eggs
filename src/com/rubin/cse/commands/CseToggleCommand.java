@@ -1,8 +1,7 @@
 package com.rubin.cse.commands;
 
 import com.rubin.cse.CseMain;
-import com.rubin.cse.GUI.CseToggleGUI;
-import org.bukkit.ChatColor;
+import com.rubin.cse.GUI.ToggleGUI.CseToggleGUI;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;

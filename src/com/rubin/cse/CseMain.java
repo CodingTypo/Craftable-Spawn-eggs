@@ -1,13 +1,14 @@
 package com.rubin.cse;
 
-import com.rubin.cse.GUI.CseToggleGUI;
+import com.rubin.cse.GUI.ToggleGUI.CseToggleGUI;
 import com.rubin.cse.commands.*;
 import com.rubin.cse.events.*;
-import com.rubin.cse.events.GUIevents.CseToggleGUIEvents;
-import com.rubin.cse.events.GUIevents.GUIEvents;
-import com.rubin.cse.events.GUIevents.GUIEvents2;
-import com.rubin.cse.events.GUIevents.GUIEvents3;
-import com.rubin.cse.items.*;
+import com.rubin.cse.events.GUIevents.ToggleGUI.CseToggleGUIEvents;
+import com.rubin.cse.events.GUIevents.GiveGUI.GUIEvents;
+import com.rubin.cse.events.GUIevents.GiveGUI.GUIEvents2;
+import com.rubin.cse.events.GUIevents.GiveGUI.GUIEvents3;
+import com.rubin.cse.items.GUI.*;
+import com.rubin.cse.items.SpawnEggs.*;
 import org.bukkit.event.Listener;
 import org.bukkit.plugin.java.JavaPlugin;
 
