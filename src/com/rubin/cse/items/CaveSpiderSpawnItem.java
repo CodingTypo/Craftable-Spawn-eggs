@@ -1,7 +1,6 @@
 package com.rubin.cse.items;
 
 import com.rubin.cse.CseMain;
-import com.rubin.cse.events.CaveSpiderSpawnEvents;
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.NamespacedKey;
