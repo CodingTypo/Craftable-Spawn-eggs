@@ -1,9 +1,9 @@
 package com.rubin.cse.items;
 
+import com.rubin.cse.CseMain;
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.NamespacedKey;
-import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.enchantments.Enchantment;
 import org.bukkit.inventory.*;
 import org.bukkit.inventory.meta.ItemMeta;
@@ -12,6 +12,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class BatSpawnItem {
+
+    private static CseMain plugin;
+
+
+    public BatSpawnItem(CseMain instance){
+        plugin = instance;
+    }
 
     public static ItemStack batspawn;
 
@@ -35,12 +42,12 @@ public class BatSpawnItem {
         batspawn = item;
 
         //Shaped recipe
-        ShapedRecipe sr = new ShapedRecipe(NamespacedKey.minecraft("batspawn"), item);
-        sr.shape("BBB", "BSB", "BBB");
-        sr.setIngredient('B', Material.DIAMOND);
-        sr.setIngredient('S', Material.BLACK_DYE);
-        Bukkit.getServer().addRecipe(sr);
-
-
+        if (plugin.getConfig().getBoolean("enabled_spawn_eggs.bat.enabled")) {
+            ShapedRecipe sr = new ShapedRecipe(NamespacedKey.minecraft("batspawn"), item);
+            sr.shape("BBB", "BSB", "BBB");
+            sr.setIngredient('B', Material.DIAMOND);
+            sr.setIngredient('S', Material.BLACK_DYE);
+            Bukkit.getServer().addRecipe(sr);
+        }
     }
 }

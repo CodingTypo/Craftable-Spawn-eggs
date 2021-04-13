@@ -1,7 +1,6 @@
 package com.rubin.cse.events;
 
 import com.rubin.cse.items.BatSpawnItem;
-import org.bukkit.entity.EntityType;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;

@@ -1,5 +1,6 @@
 package com.rubin.cse.GUI;
 
+import com.rubin.cse.CseMain;
 import com.rubin.cse.items.*;
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
@@ -13,6 +14,13 @@ import java.util.Collections;
 import java.util.List;
 
 public class CseToggleGUI implements InventoryHolder {
+
+    private static CseMain plugin;
+
+
+    public CseToggleGUI(CseMain instance){
+        plugin = instance;
+    }
 
     private  Inventory inv;
 

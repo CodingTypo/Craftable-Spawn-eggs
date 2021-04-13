@@ -1,5 +1,6 @@
 package com.rubin.cse.items;
 
+import com.rubin.cse.CseMain;
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.NamespacedKey;
@@ -13,6 +14,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CatSpawnItem {
+
+    private static CseMain plugin;
+
+
+    public CatSpawnItem(CseMain instance){
+        plugin = instance;
+    }
 
     public static ItemStack catspawn;
 
@@ -36,11 +44,12 @@ public class CatSpawnItem {
         catspawn = item;
 
         //Shaped recipe
+        if (plugin.getConfig().getBoolean("enabled_spawn_eggs.cat.enabled")) {
         ShapedRecipe sr = new ShapedRecipe(NamespacedKey.minecraft("catspawn"), item);
         sr.shape("BBB", "BSB", "BBB");
         sr.setIngredient('B', Material.DIAMOND);
         sr.setIngredient('S', Material.RED_BED);
-        Bukkit.getServer().addRecipe(sr);
+        Bukkit.getServer().addRecipe(sr);}
 
 
     }

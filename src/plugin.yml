@@ -1,5 +1,5 @@
 name: craftable_spawn_eggs
-version: 1.3
+version: 1.4
 author: rubin
 main: com.rubin.cse.CseMain
 api-version: 1.16
@@ -10,10 +10,16 @@ commands:
   csetoggle:
     description: toggle spawn eggs
     usage: /<command>
+  csereload:
+    description: reloads config
+    usage: /<command>
 permissions:
   csegive2:
     description: be able to use the GUI's
     default: op
   csetoggle:
     description: be able to use /csetoggle command
+    default: op
+  csereload:
+    description: be able to use /csereload command
     default: op

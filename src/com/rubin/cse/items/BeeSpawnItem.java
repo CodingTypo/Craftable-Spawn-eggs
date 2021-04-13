@@ -1,5 +1,6 @@
 package com.rubin.cse.items;
 
+import com.rubin.cse.CseMain;
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.NamespacedKey;
@@ -11,6 +12,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class BeeSpawnItem {
+
+    private static CseMain plugin;
+
+
+    public BeeSpawnItem(CseMain instance){
+        plugin = instance;
+    }
 
     public static ItemStack beespawn;
 
@@ -34,11 +42,13 @@ public class BeeSpawnItem {
         beespawn = item;
 
         //Shaped recipe
+        if (plugin.getConfig().getBoolean("enabled_spawn_eggs.bee.enabled")) {
         ShapedRecipe sr = new ShapedRecipe(NamespacedKey.minecraft("beespawn"), item);
         sr.shape("BBB", "BSB", "BBB");
         sr.setIngredient('B', Material.DIAMOND);
         sr.setIngredient('S', Material.POPPY);
         Bukkit.getServer().addRecipe(sr);
+        }
 
 
     }
